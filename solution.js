@@ -5,6 +5,9 @@ const submitEmail = async (email) => {
         {
           method: 'POST',
           headers: {
+            
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+            'Accept': 'application/json, text/plain, */*',
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({ email }),
@@ -24,5 +27,4 @@ const submitEmail = async (email) => {
     }
   };
 
-  // usage
   submitEmail('your-email@example.com');
